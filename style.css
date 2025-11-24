@@ -1,0 +1,188 @@
+/* -----------------------------------
+   PREMIUM UI THEME (Glass + Neon Pro)
+------------------------------------- */
+
+:root {
+    --bg: #0b0f17;
+    --card-bg: rgba(255, 255, 255, 0.04);
+    --card-border: rgba(255, 255, 255, 0.1);
+
+    --text: #ffffff;
+    --text-soft: #c4c9d1;
+    --text-muted: #7d8590;
+
+    --accent1: #00d2ff;
+    --accent2: #3a7bd5;
+
+    --glow: rgba(0, 210, 255, 0.45);
+
+    --radius: 18px;
+    --blur: 16px;
+}
+
+/* GENERAL */
+body {
+    margin: 0;
+    background: var(--bg);
+    font-family: 'Outfit', sans-serif;
+    color: var(--text);
+    overflow-x: hidden;
+    line-height: 1.7;
+}
+
+#bg-canvas {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.35;
+}
+
+/* CONTAINER */
+.container {
+    max-width: 950px;
+    margin: auto;
+    padding: 60px 20px;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+/* PROFILE PICTURE */
+.profile-image-container {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    padding: 4px;
+    background: linear-gradient(135deg, var(--accent1), var(--accent2));
+    overflow: hidden;
+    margin: auto;
+    box-shadow: 0 0 25px var(--glow);
+}
+
+.profile-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    border-radius: 50%;
+}
+
+/* TITLES */
+.title {
+    margin: 20px 0 5px;
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #eaf9ff;
+    letter-spacing: 1px;
+    text-shadow:
+        2px 2px 8px rgba(0, 0, 0, 0.6),
+        0 0 15px rgba(0, 210, 255, 0.4);
+}
+
+.subtitle {
+    font-size: 1.4rem;
+    color: var(--accent1);
+    margin-bottom: 15px;
+    letter-spacing: 0.5px;
+}
+
+/* LABELS */
+.info {
+    color: var(--text-soft);
+    letter-spacing: 0.3px;
+    font-size: 1rem;
+    margin: 3px 0;
+}
+
+/* BUTTON */
+.resume-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 28px;
+    font-size: 1.05rem;
+    border-radius: 30px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    background: linear-gradient(135deg, var(--accent1), var(--accent2));
+    box-shadow:
+        0 4px 12px rgba(0, 210, 255, 0.25),
+        0 0 18px rgba(0, 210, 255, 0.35);
+    transition: 0.25s ease-in-out;
+}
+
+.resume-btn:hover {
+    transform: translateY(-3px);
+    box-shadow:
+        0 8px 22px rgba(0, 210, 255, 0.45),
+        0 0 30px rgba(0, 210, 255, 0.6);
+}
+
+/* SOCIAL ICONS */
+.social-links {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+}
+
+.social-links a {
+    color: #d9faff;
+    font-size: 22px;
+    padding: 15px;
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(12px);
+    transition: 0.25s ease;
+}
+
+.social-links a:hover {
+    color: #ffffff;
+    box-shadow: 0 0 18px var(--accent1);
+    transform: translateY(-4px);
+}
+
+/* GLASS SECTIONS */
+.glass {
+    background: var(--card-bg);
+    padding: 30px;
+    margin-top: 55px;
+    border-radius: var(--radius);
+    border: 1px solid var(--card-border);
+    backdrop-filter: blur(var(--blur));
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.4);
+}
+
+/* HEADINGS */
+h3 {
+    font-size: 1.9rem;
+    margin-bottom: 18px;
+    color: #ebfaff;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-shadow:
+        1px 1px 4px rgba(0, 0, 0, 0.45),
+        0 0 10px rgba(0, 210, 255, 0.3);
+}
+
+/* EXPERIENCE */
+.company {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    margin-bottom: 10px;
+}
+
+/* FOOTER */
+footer {
+    margin-top: 60px;
+    text-align: center;
+    padding: 15px;
+    color: var(--text-muted);
+    font-size: 0.95rem;
+}
